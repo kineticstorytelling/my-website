@@ -1,0 +1,41 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: no wrap;
+    padding: 25px 25px 10px 5px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    li {
+      list-style: none;
+      display: inline-block;
+      margin: 10px 20px;
+      position: relative;
+      right: 15%;
+      a {
+         text-decoration: none;
+         font-size: var(--fs-primary);
+         color: var(--clr-dark);
+         font-weight: 500;
+         position: relative;
+      }
+    }
+  }
+
+
+header h3{
+    visibility: hidden;
+  
+  }
+
+
+  @media only screen and (max-width: 700px) {
+
+    header h3{
+      visibility: visible;
+      position: relative;
+      right: 19rem;
+      top: -1rem;
+    }
+  }

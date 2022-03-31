@@ -1,0 +1,40 @@
+.nav_list li a{
+  font-family: var(--ff-secondary);
+    &:hover{
+    color: var(--clr-accent);
+  }
+}
+@media only screen and (max-width: 700px) {
+
+    .nav_list{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 10rem;
+      left: 40px;
+      width: 30px;
+      height: 100%;
+      transition: all .5s ease;
+           ul{
+        font-size: var(--fs-body);
+        line-height: 2rem;
+        text-align: right;
+        user-select: none;
+        background: rgba(230, 230, 230, 0.63);
+        height: 25rem;
+        width: 8rem;
+        padding-left: 4vw;
+        border-radius: 10px;
+        opacity: 0;
+        transform: translateY(10rem);
+        transition: all .5s ease;
+      }
+    }
+  
+
+
+   
+
+  }

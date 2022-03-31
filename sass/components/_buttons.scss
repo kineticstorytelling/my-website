@@ -1,0 +1,63 @@
+
+.hero_btn{
+    font-size: 20px;
+    color: var(--clr-dark);
+    background-color: var(--tertiary);
+    border-color: var(--clr-light);
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 13px 30px 13px 30px;
+    position: absolute;
+    right: 35%;
+    top: 55%;
+    transition: all 0.3s ease;
+        &:hover{
+      color: rgb(226, 226, 226);
+      background: rgba(110, 110, 110, 0.726);
+      border: 2.2px solid var(--clr-light);
+  }
+} 
+
+@media only screen and (max-width: 700px){
+    .hero_btn{
+      position: absolute;
+      top: 47%;
+    }
+
+  }
+
+  @media only screen and (max-width: 450px){
+
+  .hero_btn{
+    position: absolute;
+    top: 55%;
+    left: 17%;
+    cursor: pointer;
+      &:hover{
+      color: rgb(226, 226, 226);
+      background: rgba(110, 110, 110, 0.726);
+      border: 2.2px solid var(--clr-light);
+  }
+  }
+    
+}
+
+.contact button{
+    margin: 2%;
+    padding: 10px 30px 10px 30px;
+    font-size: var(--pr-fs);
+    border: 2px solid var(--clr-light);
+    background-color:var(--clr-light);
+    background-image: linear-gradient(var(--clr-light),#f3f3fd66 );
+    border-radius: 30px;
+    color: var(--clr-dark);
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+        &:hover{
+        border-color: (var(--clr-accent));
+        color: rgb(226, 226, 226);
+        background: rgba(110, 110, 110, 0.726);
+    } 
+}
+

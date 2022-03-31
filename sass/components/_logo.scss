@@ -1,0 +1,57 @@
+.logo{
+    position: relative;
+    left: 5%;
+    height: 6rem;
+}
+.logo_btn{
+    height: 5rem;
+    width: 5.5rem;
+    border: none;
+    background: transparent;
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    .touch_logo{
+      right: 20%;
+    }
+    .logo_btn:hover ~ .touch_logo{
+      right: -15rem;
+      transition: all .5s ease;
+    }
+    .logo_btn:not(:hover) ~ .touch_logo{
+      transition: all .5s ease;
+    }
+  
+    .logo{
+      cursor: pointer;
+      transition: all .5s ease;
+      margin: 0 0 0 0;
+    }
+  
+    .logo:hover{
+      transform: rotate(360deg);
+    }
+   
+    .logo_btn{
+      border: none;
+      background: transparent;
+      width: 10%;
+      position: relative;
+      height: 5rem;
+    }
+   
+    .logo_btn:focus ~ .nav_list > ul{
+      opacity: 1;
+      transform: translateY(0);
+      z-index: 3;
+    }
+  }
+
+  @media only screen and (max-width: 450px){
+
+    .logo_btn{
+      outline: none;
+    }
+  }

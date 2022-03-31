@@ -1,0 +1,47 @@
+.my-services{
+    text-align: center;
+  }
+  
+  .section__title--services{
+    color: var(--clr-dark);
+    position: relative;
+  }
+  /* this is the line under what I do */
+  .section__title--services::after{
+    content: '';
+    display: block;
+    width: 21%;
+    height: 1.4px;
+    margin: 0.1em auto .7em;
+    background: currentColor;
+    opacity: 0.25;
+  }
+  @media (min-width: 800px){
+    .services{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 2em;
+        grid-template-areas: "title";
+        padding: 0 10%;
+      }
+      /* display: flex;
+      max-width: 1000px;
+      margin: 0 auto; */
+    
+    .service{
+      margin-left: 2em;
+    }
+    .service1{
+      grid-column: span 3;
+      padding: 0 20% 0 20%;
+    }
+  }
+  @media(max-width: 790px){
+    .service1{
+      padding: 0 20% 1% 20%;
+    }
+    .service{
+      padding: 0 20% 1% 20%;
+    }
+  }
+  
