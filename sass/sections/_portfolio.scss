@@ -22,6 +22,32 @@
     height: 400vh;
   }
   
+  .project_content{
+    z-index: 3;
+    position: relative;
+    // top: 25%;
+    margin: 0 0 0 67%;
+  }
+  .project_description{
+    background-color: rgb(202, 206, 207);
+    height: 8rem;
+    width: 23rem;
+    font-size: var(--fs-project);
+    padding: 20px 20px 15px 15px;
+    border-radius: 10px;
+  }
+
+  .project_image img{
+    position: relative;
+    width: 85%;
+    margin: -45% 0% 10% 5%;
+    z-index: 0;
+    filter: brightness(70%);
+    transition: all .4s ease;
+      &:hover{
+      filter: none;
+    }
+  }
   .portfolio__items{
     color:var(--clr-dark);
     text-align: center;
@@ -36,7 +62,7 @@
     border-radius: 20px; 
   }
   
-  .project_content{
+  .project_content1{
     z-index: 3;
     position: relative;
   }
@@ -81,11 +107,12 @@
       cursor: pointer;
     }
   }
-  .project_image img{
+  .project_image1 img{
     position: relative;
-    height:400px;
-    width: 400;
-    margin: -30% 0 0 55%;
+    // height:400px;
+    // width: 400;
+    width: 90%;
+    margin: -34% 0 0 55%;
     z-index: 0;
     filter: brightness(70%);
     transition: all .4s ease;
@@ -98,21 +125,16 @@
 
   .project_slider{
     width: 60%;
-    // display: inline-block;
-    // flex-direction: row;
-    // margin: auto;
     overflow: hidden;
   }
   .product_images{
-    // display: inline-block;
-    // width: 100%;
-    // flex-direction: row;
         img{
       width: 100%;
-      // display: inline-block;
-      // flex-direction: row;
     }
 }
+
+// third project
+
 
   .project_content3{
     z-index: 3;
@@ -127,18 +149,18 @@
     font-size: var(--fs-project);
     padding: 20px 20px 15px 15px;
     border-radius: 10px;
+    flex-wrap: wrap;
   }
 
   .project_image3 img{
     position: relative;
-    height:400px;
-    width: 400;
-    margin: -40% 0 0 3%;
+    // height:400px;
+    width: 90%;
+    margin: -28% 3% 0 0;
     z-index: 0;
     filter: brightness(70%);
     transition: all .4s ease;
       &:hover{
-      // z-index: 3;
       filter: none;
     }
   }
