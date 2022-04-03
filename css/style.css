@@ -923,37 +923,6 @@ header h3 {
   height: 400vh;
 }
 
-.project_content {
-  z-index: 3;
-  position: relative;
-  margin: 0 0 0 67%;
-}
-
-.project_description {
-  background-color: #cacecf;
-  height: 8rem;
-  width: 23rem;
-  font-size: var(--fs-project);
-  padding: 20px 20px 15px 15px;
-  border-radius: 10px;
-}
-
-.project_image img {
-  position: relative;
-  width: 85%;
-  margin: -45% 0% 10% 5%;
-  z-index: 0;
-  -webkit-filter: brightness(70%);
-          filter: brightness(70%);
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
-}
-
-.project_image img:hover {
-  -webkit-filter: none;
-          filter: none;
-}
-
 .portfolio__items {
   color: var(--clr-dark);
   text-align: center;
@@ -977,11 +946,6 @@ header h3 {
   border-radius: 20px;
 }
 
-.project_content1 {
-  z-index: 3;
-  position: relative;
-}
-
 .project_title a {
   text-decoration: none;
   color: var(--clr-dark);
@@ -996,27 +960,6 @@ header h3 {
 .project_techList li {
   list-style: none;
   display: inline-block;
-}
-
-.project_description {
-  background-color: #cacecf;
-  height: 11rem;
-  width: 23rem;
-  font-size: var(--fs-project);
-  padding: 20px 20px 15px 15px;
-  border-radius: 10px;
-}
-
-.project_description1 {
-  background-color: #cacecf;
-  height: 13.5rem;
-  width: 23rem;
-  font-size: var(--fs-project);
-  padding: 20px 20px 15px 15px;
-  border-radius: 10px;
-}
-
-.project_techList li {
   font-size: 15px;
   font-weight: 450;
   text-shadow: 1px 0.7px 1px rgba(36, 35, 35, 0.623);
@@ -1032,11 +975,24 @@ header h3 {
   cursor: pointer;
 }
 
+.project_content1 {
+  position: relative;
+  margin: 0 0 0 67%;
+}
+
+.project_description1 {
+  background-color: #cacecf;
+  height: 13.5rem;
+  width: 23rem;
+  font-size: var(--fs-project);
+  padding: 20px 20px 15px 15px;
+  border-radius: 10px;
+}
+
 .project_image1 img {
   position: relative;
-  width: 90%;
-  margin: -34% 0 0 55%;
-  z-index: 0;
+  width: 55%;
+  margin: -33% 0% 10% 5%;
   -webkit-filter: brightness(70%);
           filter: brightness(70%);
   -webkit-transition: all .4s ease;
@@ -1048,25 +1004,37 @@ header h3 {
           filter: none;
 }
 
-.project_slider {
-  width: 60%;
-  overflow: hidden;
+.project_description2 {
+  background-color: #cacecf;
+  height: 11rem;
+  width: 23rem;
+  font-size: var(--fs-project);
+  padding: 20px 20px 15px 15px;
+  border-radius: 10px;
 }
 
-.product_images img {
-  width: 100%;
+.project_image2 img {
+  width: 60vw;
+  margin: -34% 0 0 37%;
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.project_image2 img:hover {
+  -webkit-filter: none;
+          filter: none;
 }
 
 .project_content3 {
-  z-index: 3;
-  position: relative;
   margin: 10% 0 0 67%;
 }
 
 .project_description3 {
   background-color: #cacecf;
-  height: 8rem;
-  width: 23rem;
+  height: 30%;
+  width: 80%;
   font-size: var(--fs-project);
   padding: 20px 20px 15px 15px;
   border-radius: 10px;
@@ -1077,6 +1045,7 @@ header h3 {
 .project_image3 img {
   position: relative;
   width: 90%;
+  min-width: 400px;
   margin: -28% 3% 0 0;
   z-index: 0;
   -webkit-filter: brightness(70%);
@@ -1088,6 +1057,46 @@ header h3 {
 .project_image3 img:hover {
   -webkit-filter: none;
           filter: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .project_content1 {
+    margin: 20% 0 40% 0;
+  }
+  .project_content2 {
+    margin: 10% 0 35% 0;
+  }
+  .project_content3 {
+    margin: 10% 0 35% 0;
+  }
+  .project_description3 {
+    width: 50%;
+    margin: auto;
+  }
+  .project_image1 img {
+    width: 30rem;
+    margin-inline: auto;
+  }
+  .project_image2 img {
+    width: 100vw;
+    margin-inline: auto;
+  }
+  .project_image3 img {
+    margin-inline: auto;
+    width: 100vw;
+  }
 }
 
 .my-services {
