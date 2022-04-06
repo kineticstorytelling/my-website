@@ -34,5 +34,20 @@
 //     }
 // });
 
-const currentSlide = wrapper.children[currentSlideIndex];
-const nextSlide = wrapper.children[index];
+// const currentSlide = wrapper.children[currentSlideIndex];
+// const nextSlide = wrapper.children[index];
+
+const accordionHeader = document.querySelectorAll('.competencies__accordion-header');
+
+accordionHeader.forEach(accordionHeader => {
+    accordionHeader.addEventListener('click', event =>{
+        accordionHeader.classList.toggle('active');
+        const accordionItemBody = accordionHeader.nextElementSibling;
+        if (accordionHeader.classList.contains('active')) {
+            accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + 'px';
+        }
+        else{
+            accordionItemBody.style.maxHeight = 0;
+        }
+    });
+});
