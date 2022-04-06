@@ -643,6 +643,19 @@ header h3 {
   transition: all .4s ease;
 }
 
+@media only screen and (max-width: 600px) {
+  .competencies {
+    height: 250vh;
+  }
+  .competencies__accordion {
+    width: 85vw;
+  }
+  .competencies__accordion-header::after {
+    position: absolute;
+    left: 85%;
+  }
+}
+
 .contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -662,6 +675,15 @@ header h3 {
 
 .contact h2 {
   margin: 0 0 10% 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact {
+    height: 100vh;
+  }
+  .contact h2 {
+    margin-top: 40%;
+  }
 }
 
 .hero {
@@ -778,7 +800,7 @@ header h3 {
   -webkit-box-shadow: inset 0 0 0 2000px rgba(167, 170, 170, 0.356);
           box-shadow: inset 0 0 0 2000px rgba(167, 170, 170, 0.356);
   padding: 10vh;
-  height: 400vh;
+  height: 300vh;
 }
 
 .portfolio__items {

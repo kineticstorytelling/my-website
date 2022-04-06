@@ -8,3 +8,13 @@
     .contact h2{
       margin: 0 0 10% 0;
     }
+
+    @media only screen and (max-width: 600px){
+      
+      .contact{
+        height: 100vh;
+        h2{
+          margin-top: 40%;
+        }
+      }
+    }

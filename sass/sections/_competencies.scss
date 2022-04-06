@@ -62,6 +62,18 @@
     transition: all .4s ease;
   }
 
+  @media only screen and (max-width: 600px){
+    .competencies{
+      height: 250vh;
+    }
+    .competencies__accordion{
+      width: 85vw;
+    }
+    .competencies__accordion-header::after{
+      position: absolute;
+      left: 85%;
+    }
+  }
 
   // .section__body--competencies-languages{
   //   position: relative;
