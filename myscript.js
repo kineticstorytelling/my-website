@@ -39,15 +39,16 @@
 
 const accordionHeader = document.querySelectorAll('.competencies__accordion-header');
 
-accordionHeader.forEach(accordionHeader => {
+accordionHeader.forEach(accordionHeader =>{
     accordionHeader.addEventListener('click', event =>{
         accordionHeader.classList.toggle('active');
-        const accordionItemBody = accordionHeader.nextElementSibling;
-        if (accordionHeader.classList.contains('active')) {
-            accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + 'px';
-        }
-        else{
-            accordionItemBody.style.maxHeight = 0;
+        const accordionItemBody =
+        accordionHeader.nextElementSibling;
+        if(accordionHeader.classList.contains('active')){
+            accordionItemBody.style.maxHeight=
+            accordionItemBody.scrollHeight + 'px';
+        } else{
+            accordionItemBody.style.maxHeight=0;
         }
     });
 });

@@ -652,7 +652,7 @@ header h3 {
   }
   .competencies__accordion-header::after {
     position: absolute;
-    left: 85%;
+    left: 80%;
   }
 }
 
@@ -769,7 +769,7 @@ header h3 {
   }
   .section__subtitle--hero1 {
     position: relative;
-    top: -17%;
+    top: -12%;
     right: 32%;
     margin-bottom: -25px;
     text-align: left;
